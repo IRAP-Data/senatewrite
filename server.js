@@ -17,7 +17,7 @@ app.get('/api/metadata', function(req, res) {
 });
 
 app.get('/api/regionalcontacts', function(req, res) {
-  request('https://spreadsheets.google.com/tq?&key=19mj82DTlZy1JrAoYSUdj7KedCeEio5s68iGSaG9gVxw', function(err, response, body) {
+  request('https://spreadsheets.google.com/tq?&key=1HwQt4Blux9vkENwhkhR27oqz42VFUOgzR-sOvrYZQRk', function(err, response, body) {
     if (err) {
       console.log(err);
       res.sendStatus(404);
