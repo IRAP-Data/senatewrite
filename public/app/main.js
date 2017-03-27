@@ -1,1 +1,1 @@
-var senwrite = angular.module('sciLeadershipApp', ['ngMaterial']);
+var senwrite = angular.module('senwrite', ['ngMaterial']);
