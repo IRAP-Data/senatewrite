@@ -17,7 +17,7 @@ app.get('/api/metadata', function(req, res) {
 });
 
 app.get('/api/regionalcontacts', function(req, res) {
-  request('https://spreadsheets.google.com/tq?&key=1HwQt4Blux9vkENwhkhR27oqz42VFUOgzR-sOvrYZQRk', function(err, response, body) {
+  request('https://spreadsheets.google.com/tq?&key=1eh6aTH1t3_fZjN7HtXD1b8lGMIHM-wEcLwGTF7QumVY', function(err, response, body) {
     if (err) {
       console.log(err);
       res.sendStatus(404);
@@ -30,7 +30,7 @@ app.get('/api/regionalcontacts', function(req, res) {
 });
 
 app.get('/api/addresses', function(req, res) {
-  request('https://spreadsheets.google.com/tq?&key=1BmNEGW1IikzoF_qhgIRND8BG1Ebub7-46a6CuPw10_I', function(err, response, body) {
+  request('https://spreadsheets.google.com/tq?&key=1OC3qG7iTU4wBtYm4gBicz7waxAMbei9roNepftGOGok', function(err, response, body) {
     if (err) {
       console.log(err);
       res.sendStatus(404);
@@ -43,7 +43,7 @@ app.get('/api/addresses', function(req, res) {
 });
 
 app.get('/api/writing', function(req, res) {
-  request('https://spreadsheets.google.com/tq?&key=15pil_Sj-zyeoJQhDrgK9Jq4zYYVim4XhP90rQCBlJnI', function(err, response, body) {
+  request('https://spreadsheets.google.com/tq?&key=1zaVyoCvmxRI4LAV_W-N7K9uZrpwjl2X-pEYuG4vCBXM', function(err, response, body) {
     if (err) {
       console.log(err);
       res.sendStatus(404);
