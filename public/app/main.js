@@ -1,1 +1,1 @@
-var senwrite = angular.module('senwrite', ['ngMaterial']);
+var senatewrite = angular.module('senatewrite', ['ngMaterial']);
