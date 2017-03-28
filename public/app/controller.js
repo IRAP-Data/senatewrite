@@ -1,4 +1,4 @@
-senwrite.controller('formCtrlr', ['$scope', 'dataFactory', 'pdf', function($scope, dataFactory, pdf) {
+senatewrite.controller('formCtrlr', ['$scope', 'dataFactory', 'pdf', function($scope, dataFactory, pdf) {
   $scope.state = '';
   $scope.states = [];
   $scope.user = {};
