@@ -1,4 +1,4 @@
-senwrite.factory('pdf', function() {
+senatewrite.factory('pdf', function() {
   function createDocDefinition(cover, senatorALetters, senatorBLetters) {
     return {
       content: cover.concat(senatorALetters).concat(senatorBLetters),
