@@ -1,4 +1,4 @@
-senwrite.factory('dataFactory', function($http) {
+senatewrite.factory('dataFactory', function($http) {
   var getAddresses = function() {
     return $http({
       method: 'GET',
