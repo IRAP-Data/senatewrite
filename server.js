@@ -43,7 +43,7 @@ app.get('/api/addresses', function(req, res) {
 });
 
 app.get('/api/writing', function(req, res) {
-  request('https://spreadsheets.google.com/tq?&key=1zaVyoCvmxRI4LAV_W-N7K9uZrpwjl2X-pEYuG4vCBXM', function(err, response, body) {
+  request('https://spreadsheets.google.com/tq?&key=1qOh7vb4zp2hJf2VonGBOfqc042XN_c8oJ7QkS5qo-Jc', function(err, response, body) {
     if (err) {
       console.log(err);
       res.sendStatus(404);
