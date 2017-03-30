@@ -112,7 +112,7 @@
 
         <div layout-gt-sm="row">
           <md-card class="md-block" flex-gt-sm>
-            <md-card-title style="height:32px !important;">
+            <md-card-title style="height:32px !important;" id="senator1-title">
               <md-card-title-text>
                 <span class="md-headline">SENATOR 1: {{ currWritingOpts[0].senator }}</span>
 <!--                 <span class="md-subhead" hide-gt-sm>Please customize your letters below</span> -->
@@ -141,7 +141,7 @@
           </md-card>
 
           <md-card class="md-block" flex-gt-sm>
-            <md-card-title style="height:32px !important;">
+            <md-card-title style="height:32px !important;" id="senator2-title">
               <md-card-title-text>
                 <span class="md-headline">SENATOR 2: {{ currWritingOpts[1].senator }}</span>
 <!--                 <span class="md-subhead" hide-gt-sm>Please customize your letters below</span> -->
@@ -154,7 +154,7 @@
                     <label>Options for paragraph {{ $index + 1 }}</label>
                     <md-select ng-model="senatorB[paragraph + $index]">
                       <md-option ng-repeat="paragraph in paragraphs" ng-value="paragraph">
-                        {{ paragraph.substring(0,45) }}...
+                        {{ paragraph.substring(0,55) }}...
                       </md-option>
                     </md-select>
                   </md-input-container>
@@ -203,7 +203,12 @@
 <p>Original app created by <a href="//www.benjanes.com">Ben Janes</a></p>
 
 </footer>
-
+<script>
+  var app = angular.module('senatewrite', []);
+  app.controller('formCtrlr', function($scope) {
+    angular.element('#senator2-title').css('height', '32px');
+  });
+</script>
 <!-- <script src="lib/pdfmake.min.js"></script> -->
 <script src="app/main.js"></script>
 <script src="app/factory.js"></script>
