@@ -141,7 +141,7 @@
           </md-card>
 
           <md-card class="md-block" flex-gt-sm>
-            <md-card-title style="height:32px !important;" id="senator2-title">
+            <md-card-title ngstyle="{color:'red',height:'32px'}" style="height:32px !important;" id="senator2-title">
               <md-card-title-text style="height:32px !important;" id="senator2-title-text">
                 <span class="md-headline">SENATOR 2: {{ currWritingOpts[1].senator }}</span>
 <!--                 <span class="md-subhead" hide-gt-sm>Please customize your letters below</span> -->
@@ -199,7 +199,7 @@
 
 <footer>
 <!--      <h2>FOOTER TEXT</h2> -->
-<p>Original app created by <a href="//www.benjanes.com">Ben Janes</a></p>
+<p style="color:#fff;">Original app created by <a href="//www.benjanes.com">Ben Janes</a></p>
 
 </footer>
 <script>
@@ -209,7 +209,6 @@
     angular.element('#senator2-title-text').css('height', '32px');
   });
 </script>
-<!-- <script src="lib/pdfmake.min.js"></script> -->
 <script src="app/main.js"></script>
 <script src="app/factory.js"></script>
 <script src="app/pdfService.js"></script>
