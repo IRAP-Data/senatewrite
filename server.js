@@ -82,11 +82,11 @@ function processWritingOptionData(data) {
   data = data.reduce(function(obj, row) {
     var paraIdx, val;
     if (!obj[row.sen_state]) obj[row.sen_state] = {};
-    if (!obj[row.sen_state][row.name_last]) obj[row.sen_state][row.name_last] = [[], [], [], [], []];
+    if (!obj[row.sen_state][row.name_last]) obj[row.sen_state][row.name_last] = [[], [], [], []];
     
     for (var key in row) {
       if (row.hasOwnProperty(key) && /para_\d_opt_\d/.test(key) && row[key] && row[key] !== '') {
-        paraIdx = parseInt(key[5]) - 1;
+        paraIdx = parseInt(key[4]) - 1;
         obj[row.sen_state][row.name_last][paraIdx].push(row[key]);
       }
     }
