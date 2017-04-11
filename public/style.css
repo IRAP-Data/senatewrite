@@ -8,8 +8,14 @@ h1, h2, h3, h4, h5, h6, p, a {
   margin-right: 1%;
   font-weight: normal;
 }
+
 h1, h2 {
   text-align: center;
+}
+
+.emphasized{
+  font-weight: bold;
+  font-style: italic;
 }
 
 h2 {
